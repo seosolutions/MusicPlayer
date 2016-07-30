@@ -26,9 +26,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+       /*
+
+        Animação no nome da musica
+
         TextView text = (TextView) findViewById(R.id.textView);
-        //text.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, android.R.anim.slide_in_left));
         text.animate().translationX(1000f).setDuration(10000);
+        */
         // colocar musica no onCreate para poder continuar de onde parou;
 
         mediaPlayer = MediaPlayer.create(this, R.raw.music);
